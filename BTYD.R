@@ -63,7 +63,7 @@ ggplot(elog, aes(x=date,y=sales,group=cust)) +
   scale_x_date() +
   scale_y_log10() +
   ggtitle("Sales for individual customers") +
-  ylab("Sales (???, IN)") + xlab("") +
+  ylab("Sales (₹, IN)") + xlab("") +
   theme_minimal()
 
 # look at days between orders
@@ -105,7 +105,7 @@ data <- dc.ElogToCbsCbt(elog, per="week",
 # take a look
 str(data)
 
-# cbs is short for "customer-by-sufficient-statistic" matrix
+# cbs is short for "customer-by-sufficient-statistic” matrix
 #               with the sufficient stats being: 
 #                       frequency
 #                       recency (time of last transaction) and
