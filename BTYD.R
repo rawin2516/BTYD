@@ -7,7 +7,6 @@ if(length(toInstall)!=0)
 lapply(toInstallCandidates, library, character.only = TRUE)
 
 
-
 ############################################
 #
 # LOAD DATA
