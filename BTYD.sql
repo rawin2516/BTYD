@@ -4,4 +4,5 @@ SELECT
     SUM(`Amount to Customer`) AS Sales
 FROM
     odsanalytics.Delivered_GMV
-GROUP BY 2;
+GROUP BY 2
+;
